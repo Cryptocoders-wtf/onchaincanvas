@@ -19,18 +19,6 @@ export const getContractAddresses = (network: string) => {
       tokenAddress: "",
     };
   }
-  if (network == "rinkeby") {
-    return {
-      network,
-      EtherscanBase: "https://rinkeby.etherscan.io/address",
-      chainId: ChainIds.RinkebyTestNet,
-      storeAddress: rinkeby.storeAddress,
-      drawAddress: draw_rinkeby.customTokenAddress,
-      composerAddress: draw_rinkeby.composerAddress,
-      registryAddress: draw_rinkeby.registryAddress,
-      tokenAddress: "",
-    };
-  }
   if (network == "goerli") {
     return {
       network,
