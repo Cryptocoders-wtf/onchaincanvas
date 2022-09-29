@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="mx-auto p-2 pl-8 pr-8 text-left">
-      <div class="mb-2 text-xl font-bold">{{ "Draw Your Own NFT" }}</div>
+      <div class="mb-2 text-xl font-bold">{{ "On-Chain Canvas" }}</div>
       <p class="mb-2">
         {{ $t("draw.message1") }}
         {{ $t("draw.message2") }}
