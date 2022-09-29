@@ -277,7 +277,9 @@ export default defineComponent({
     const info = ref<Info>(
       resultInfo ? JSON.parse(resultInfo) || baseInfo : baseInfo
     );
-    // console.log("** info", info.value.nextIndex, info.value.keys);
+
+    //console.log("** info", info.value.nextIndex, info.value.keys);
+
     drawings.value = info.value.keys.map((key, index) => {
       const result = localStorage.getItem(key);
       //console.log("result", key, index, result);
@@ -300,7 +302,19 @@ export default defineComponent({
       // console.log("** setup:overlays.length", index, drawing.layers.length, drawing.overlays.length);
       return drawing;
     });
-    //console.log("drawings", drawings.value);
+
+    // Delete gabages in the localStorage
+    new Array(info.value.nextIndex).fill(0).forEach((v, index) => {
+      const key = `${keyDrawing}${index}`;
+      const iFound = info.value.keys.indexOf(key);
+      if (iFound == -1) {
+        const result = localStorage.getItem(key);
+        if (result) {
+          console.log("removing deleted item", key, result.length);
+          localStorage.removeItem(key);
+        }
+      }
+    });
 
     const showCanvas = ref<boolean>(false);
     const selectedIndex = ref<number>(9999);
