@@ -159,7 +159,7 @@ export default defineComponent({
   setup() {
     const route = useRoute();
     const network =
-      typeof route.query.network == "string" ? route.query.network : "mainnet";
+      typeof route.query.network == "string" ? route.query.network : "goerli";
     const addresses = getContractAddresses(network)!;
     addresses.tokenAddress = addresses.drawAddress;
 
