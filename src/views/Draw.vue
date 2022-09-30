@@ -465,7 +465,7 @@ export default defineComponent({
       tokensPerAsset,
       assetStoreRO,
       tokenAbi: contentsToken.wabi.abi,
-      tokenName: "DrawYourOwnToken",
+      tokenName: "OnChainCanvas",
       selection,
       addresses,
       tokens,

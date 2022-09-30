@@ -5,9 +5,8 @@
     </div>
     <p v-if="EtherscanStore">
       Etherscan:
-      <a :href="EtherscanStore" class="underline" target="_blank">AssetStore</a>
       <span v-if="TokenName"
-        >,
+        >
         <a :href="EtherscanToken" class="underline" target="_blank">{{
           TokenName
         }}</a>
@@ -16,31 +15,25 @@
     <p>
       GitHub:
       <a
-        href="https://github.com/Cryptocoders-wtf/assetstore-contract"
+        href="https://github.com/Cryptocoders-wtf/onchaincanvas"
         class="underline"
         target="_blank"
-        >Contract</a
-      >,
-      <a
-        href="https://github.com/Cryptocoders-wtf/assetstore"
-        class="underline"
-        target="_blank"
-        >Web UI</a
+        >OnChainCanvas</a
       >
     </p>
     <p>
-      Project Vision:
+      Vision:
       <a
         href="https://hackmd.io/@snakajima/HJva6n-Jj"
         class="underline"
         target="_blank"
-        >On-line Asset Store and Composer</a
+        >On-Chain Asset Store, Composer and Decentralized Autonomous Marketplace</a
       >
     </p>
     <p>
       Discord:
       <a href="https://discord.gg/4JGURQujXK" class="underline" target="_blank"
-        >On-chain Asset Store</a
+        >Fully On-chain</a
       >
     </p>
     <p>
