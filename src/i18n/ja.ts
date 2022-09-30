@@ -47,6 +47,7 @@ const lang = {
     preparing2: "Preparing to mint...",
     error1: "以下のエラーメッセージを受け取りました。",
     error2: "再度、画像の選択からやり直してください。",
+    free: "無料",
   },
   message: {
     notFoundMessage: "ページが見つかりません",

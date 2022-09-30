@@ -70,7 +70,8 @@
               >
                 {{ $t("mintPanel.mint") }}
               </button>
-              <span class="ml-2">{{ mintPrice }}ETH</span>
+              <span class="ml-2" v-if="hasAnyRemix">{{ mintPrice }}ETH</span>
+              <span class="ml-2" v-else>{{ $t("mintPanel.free") }}</span>
             </span>
             <span v-else>
               <button
@@ -158,6 +159,11 @@ export default defineComponent({
         return { provider, signer, contract };
       }
       return null;
+    });
+    const hasAnyRemix = computed(() => {
+      const drawing = props.drawing as Drawing;
+      const hasRemix = drawing.remix.image;
+      return (hasRemix || drawing.overlays.length > 0);
     });
 
     const minterName = ref("");
@@ -286,6 +292,7 @@ export default defineComponent({
       validName,
       mint,
       messageRef,
+      hasAnyRemix,
     };
   },
 });

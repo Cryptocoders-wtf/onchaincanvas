@@ -46,6 +46,7 @@ const lang = {
     preparing: "Preparing to mint...",
     error1: "We have received the following error message.",
     error2: "Please try again from the selection of an image.",
+    free: "Free",
   },
   message: {
     notFoundMessage: "Page not Found",
