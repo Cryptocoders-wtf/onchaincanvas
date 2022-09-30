@@ -30,7 +30,7 @@ const lang = {
     writeName: "Name to be permanently stored to the Asset Store.",
     maxLength: "Maximum 32 bytes.",
     cc0Message:
-      "Images you mint here will be available for other people to reuse and remix as cc0 (public domain).",
+      "Images you mint here will be available for other people to reuse and remix as cc-Share Earnings (Creative Commons, but revenue needs to be shared).",
     drawMessage:
       "This is a free mint, if you draw everything from scratch, but costs { mintPrice} ETH if you use remix or overlays. 97.5% of this mint fee will be distributed to creators. It means you can earn money as a creator (Draw2Earn).",
     mintMessage1:

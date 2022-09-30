@@ -65,6 +65,7 @@
           :assetStoreRO="assetStoreRO"
           :priceRange="priceRange"
           :drawing="selectedDrawing"
+          :mintPrice="mintPrice"
           @minted="minted"
         >
           <p class="mb-2">

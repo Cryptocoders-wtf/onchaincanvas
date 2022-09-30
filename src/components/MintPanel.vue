@@ -70,6 +70,7 @@
               >
                 {{ $t("mintPanel.mint") }}
               </button>
+              <span class="ml-2">{{ mintPrice }}ETH</span>
             </span>
             <span v-else>
               <button
@@ -127,6 +128,7 @@ export default defineComponent({
     "priceRange",
     "drawing",
     "isRemix",
+    "mintPrice",
   ],
   components: {
     NetworkGate,
