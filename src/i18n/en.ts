@@ -95,8 +95,8 @@ const lang = {
     message4:
       "or place various on-chain assets or generative art on top of your drawing (overlay).",
     message5:
-      "We charge a small fee for remix and overlay, and distribute it to creators/developers.",
-    message6: "It means you can also earn money from your drawing (Draw2Earn)!",
+      "We charge a small fee ({ mintPrice} ETH) for remix and overlay, and distribute it to creators.",
+    message6: "It means you can also earn money from your drawings (Draw2Earn)!",
     message7: "Please click the 'Plus' icon below to start drawing.",
     message8:
       "After drawing it, close the canvas ('X' button at the top-right cornder) and mint it.",

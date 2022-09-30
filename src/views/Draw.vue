@@ -9,7 +9,7 @@
       <p class="mb-2">
         {{ $t("draw.message3") }}
         {{ $t("draw.message4") }}
-        {{ $t("draw.message5") }}
+        {{ $t("draw.message5", { mintPrice }) }}
         {{ $t("draw.message6") }}
       </p>
       <p class="mb-2">
