@@ -18,7 +18,13 @@
         href="https://github.com/Cryptocoders-wtf/onchaincanvas"
         class="underline"
         target="_blank"
-        >OnChainCanvas</a
+        >WebUI</a
+      >, 
+      <a
+        href="https://github.com/Cryptocoders-wtf/assetstore-contract"
+        class="underline"
+        target="_blank"
+        >Contracts</a
       >
     </p>
     <p>
