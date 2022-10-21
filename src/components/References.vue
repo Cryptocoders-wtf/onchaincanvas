@@ -5,8 +5,7 @@
     </div>
     <p v-if="EtherscanStore">
       Etherscan:
-      <span v-if="TokenName"
-        >
+      <span v-if="TokenName">
         <a :href="EtherscanToken" class="underline" target="_blank">{{
           TokenName
         }}</a>
@@ -19,7 +18,7 @@
         class="underline"
         target="_blank"
         >WebUI</a
-      >, 
+      >,
       <a
         href="https://github.com/Cryptocoders-wtf/assetstore-contract"
         class="underline"
@@ -33,7 +32,8 @@
         href="https://hackmd.io/@snakajima/HJva6n-Jj"
         class="underline"
         target="_blank"
-        >On-Chain Asset Store, Composer and Decentralized Autonomous Marketplace</a
+        >On-Chain Asset Store, Composer and Decentralized Autonomous
+        Marketplace</a
       >
     </p>
     <p>

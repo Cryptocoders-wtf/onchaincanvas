@@ -163,7 +163,7 @@ export default defineComponent({
     const hasAnyRemix = computed(() => {
       const drawing = props.drawing as Drawing;
       const hasRemix = drawing.remix.image;
-      return (hasRemix || drawing.overlays.length > 0);
+      return hasRemix || drawing.overlays.length > 0;
     });
 
     const minterName = ref("");

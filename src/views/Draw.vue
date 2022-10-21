@@ -1,7 +1,9 @@
 <template>
   <div>
     <div class="mx-auto p-2 pl-8 pr-8 text-left">
-      <div class="mb-2 text-xl font-bold">On-Chain Canvas (beta, Goerli network)</div>
+      <div class="mb-2 text-xl font-bold">
+        On-Chain Canvas (beta, Goerli network)
+      </div>
       <p class="mb-2">
         {{ $t("draw.message1") }}
         {{ $t("draw.message2") }}
@@ -218,9 +220,13 @@ export default defineComponent({
         }
       });
       // event Payout(string providerKey, uint256 assetId, address payable to, uint256 amount);
-      const [providerId] = await assetProviderRegistry.functions.getProviderId("asset");
+      const [providerId] = await assetProviderRegistry.functions.getProviderId(
+        "asset"
+      );
       //console.log("providerId", providerId.toNumber());
-      const [assetInfo] = await assetProviderRegistry.functions.getProvider(providerId);
+      const [assetInfo] = await assetProviderRegistry.functions.getProvider(
+        providerId
+      );
       console.log(
         "assetInfo",
         assetInfo.key,
@@ -333,7 +339,7 @@ export default defineComponent({
       };
       const d = new Date();
       const dataset: OriginalAssetDataSet = {
-        group: `${d.getMonth()+1}-${d.getFullYear()}`,
+        group: `${d.getMonth() + 1}-${d.getFullYear()}`,
         category: `${d.getDate()} (CC Share Earnings)`,
         width: 1024,
         height: 1024,

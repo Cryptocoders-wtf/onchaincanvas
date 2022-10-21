@@ -5,5 +5,5 @@ export const firebaseConfig = {
   storageBucket: "onchain-canvas.appspot.com",
   messagingSenderId: "583837010668",
   appId: "1:583837010668:web:4068377fbf8b93e28fb3c9",
-  measurementId: "G-QQ104YHSJH"
+  measurementId: "G-QQ104YHSJH",
 };
