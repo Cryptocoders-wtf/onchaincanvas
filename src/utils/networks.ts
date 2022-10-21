@@ -1,10 +1,8 @@
 import { ChainIds } from "../utils/MetaMask";
 import { addresses as mainnet } from "../../generated/addresses_mainnet";
 import { addresses as localhost } from "../../generated/addresses_localhost";
-import { addresses as rinkeby } from "../../generated/addresses_rinkeby";
 import { addresses as goerli } from "../../generated/addresses_goerli";
 import { token_addresses as draw_localhost } from "../../generated/addresses_draw_localhost";
-import { token_addresses as draw_rinkeby } from "../../generated/addresses_draw_rinkeby";
 import { token_addresses as draw_goerli } from "../../generated/addresses_draw_goerli";
 
 export const getContractAddresses = (network: string) => {
