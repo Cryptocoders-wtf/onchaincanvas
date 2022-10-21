@@ -172,10 +172,13 @@ export default defineComponent({
       addresses.tokenAddress
     );
 
+    const alchemyKey = process.env.VUE_APP_ALCHEMY_API_KEY;
+    console.log("*** alchemyKey", alchemyKey);
     const provider =
       addresses.network == "localhost"
         ? new ethers.providers.JsonRpcProvider()
-        : new ethers.providers.InfuraProvider(addresses.network);
+        : alchemyKey ? new ethers.providers.AlchemyProvider(network, alchemyKey)
+          : new ethers.providers.InfuraProvider(network)
 
     const assetStoreRO = new ethers.Contract(
       addresses.storeAddress,
